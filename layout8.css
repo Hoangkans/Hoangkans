@@ -1,0 +1,170 @@
+/* Đặt lại margin và padding cho trang */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+/* Container tổng */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 5px solid green;
+}
+
+.header h1 {
+    color: green;
+    font-size: 2.5em;
+}
+
+.header p {
+    color: #333;
+    font-size: 1.2em;
+}
+
+/* Navigation */
+.navigation {
+    display: flex;
+    justify-content: space-between; /* Để phân chia thành trái và phải */
+    background-color: green;
+    padding: 10px 0;
+}
+
+.navigation ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+}
+
+/* Định dạng cho danh sách liên kết bên trái */
+.nav-left {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-left li {
+    margin-right: 20px;
+}
+
+.nav-left li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Định dạng cho nút đăng nhập bên phải */
+.nav-right {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-right li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.navigation a:hover {
+    background-color: #fff;
+    color: green;
+}
+
+/* Main content */
+.main {
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    margin-top: 20px;
+}
+
+.main h2 {
+    color: black;
+    font-size: 2em;
+}
+
+.main p {
+    font-size: 1.2em;
+}
+
+/* Product section */
+.products {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.product-item {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border: 1px solid #ddd;
+    width: 30%;
+    text-align: center;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+}
+
+.product-item h3 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.product-item p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Button Styles */
+.buy-now {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buy-now:hover {
+    background-color: darkgreen;
+}
+
+/* Footer */
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.footer p {
+    font-size: 1.2em;
+}
